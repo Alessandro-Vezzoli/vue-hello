@@ -4,6 +4,7 @@ export default {
   data() {
     return {
       message: "MESSAGGIO STAMPATO ATTRAVERSO DATA ",
+      img: "public/avatar.png",
     };
   },
 };
@@ -11,9 +12,10 @@ export default {
 
 <template>
   <div>
+    <img :src="img" class="logo" />
+    <br />
     {{ message }}
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
@@ -25,8 +27,5 @@ export default {
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
 }
 </style>
